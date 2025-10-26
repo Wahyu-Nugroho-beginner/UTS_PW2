@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('kerinci');
+    return view('index');
 });
 
 Route::resource('wisata', WisataController::class);

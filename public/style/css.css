@@ -24,3 +24,17 @@
 		.trademark{font-size:0.8rem; color:#666; margin-top:28px}
 		/* responsive tweaks */
 		@media (max-width:767px){ .site-title{font-size:1.8rem} .brand-logo{width:56px;height:56px} }
+
+	/* Styles moved from inline <style> in views */
+	.header-banner { border-bottom-left-radius:36px; border-bottom-right-radius:36px; padding:30px 22px; }
+	.nav-pill { background:#fff; border-radius:10px; box-shadow:0 6px 14px rgba(0,0,0,0.06); border:0; }
+	.home-icon { width:44px; height:44px; display:flex; align-items:center; justify-content:center; border-radius:8px; background:#fff; box-shadow:0 3px 8px rgba(0,0,0,0.06); }
+	.hero { padding-top:18px; }
+
+	/* constrain framed images used in views */
+	.img-frame { max-width:420px; }
+
+	/* Kerinci page specific overrides (uses body.kerinci-page) */
+	.kerinci-page .brand-row { display:flex; align-items:center; gap:12px; }
+	.kerinci-page .site-title { font-family: 'Dela Gothic One', sans-serif; font-size:1.3rem; }
+	.kerinci-page .img-frame img { width:100%; height:auto; border-radius:6px; }

@@ -46,20 +46,14 @@
     </nav>
 
     <main class="container hero my-5">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="col-lg-7">
-                <h2 class="section-title">DANAU KERINCI</h2>
-                <p class="text-justify mt-3">
-                    Terletak di wilayah Kabupaten Kerinci, Provinsi Jambi, tidak jauh dari kawasan Kayu Aro, terdapat sebuah destinasi alam yang menakjubkan Danau Kerinci. Danau ini merupakan danau alami terbesar di Provinsi Jambi, dengan luas mencapai sekitar 4.200 hektar, berada di ketinggian ±783 meter di atas permukaan laut.
-                </p>
-                <p class="text-justify">
-                    Dikelilingi oleh perbukitan hijau dan udara yang sejuk, Danau Kerinci menawarkan pemandangan alam yang menenangkan dan memesona. Permukaan airnya yang biru jernih memantulkan bayangan langit dan pegunungan di sekitarnya, menciptakan suasana damai yang sangat cocok untuk bersantai, berfoto, atau menikmati matahari terbenam di tepian danau.
-                </p>
-                <p class="text-justify">
-                    Selain keindahan alamnya, kawasan Danau Kerinci juga menjadi pusat berbagai aktivitas wisata dan budaya. Setiap tahun diadakan Festival Danau Kerinci, yang menampilkan beragam kesenian tradisional, lomba perahu, hingga pameran hasil bumi dan kerajinan masyarakat lokal.
-                </p>
+                <h2 class="section-title">DESA KAYU ARO</h2>
+                <p class="text-justify mt-3">Kayu Aro merupakan sebuah kecamatan di Kabupaten Kerinci, Jambi, Indonesia. Merupakan hasil pemekaran dari kecamatan Gunung Kerinci pada tanggal 12 Juni 1996 berdasarkan PP NO. 47/1996. Pusat pemerintahan di Desa Tanjung Bungo. Sebelumnya pusat pemerintahan terletak di Desa Batang Sangir.</p>
+                <p class="text-justify">Desa Kayu Aro terletak di Kecamatan Kayu Aro, Kabupaten Kerinci, Provinsi Jambi, di lereng indah Gunung Kerinci, gunung tertinggi di Sumatera. Dikenal dengan udara yang sejuk dan pemandangan alam yang menakjubkan, Kayu Aro menjadi salah satu destinasi wisata alam dan agrowisata unggulan di Kerinci.</p>
+                <p class="text-justify">Desa ini dikelilingi hamparan perkebunan kopi arabika dan teh Kayu Aro yang terkenal hingga mancanegara. Keindahan alam pegunungan, sawah bertingkat, serta keramahan masyarakatnya menjadikan Kayu Aro tempat ideal untuk menikmati wisata alam, budaya, dan edukasi pertanian.</p>
             </div>
-            <div class="col-lg-5 text-center mt-4 mt-lg-0">
+            <div class="col-lg-5 text-center">
                 <div class="img-frame mx-auto" style="max-width:420px">
                     <img src="{{ asset('images/danau-kerinci.jpg') }}" alt="Danau Kerinci" onerror="this.src='https://via.placeholder.com/600x400?text=Danau+Kerinci'">
                 </div>
