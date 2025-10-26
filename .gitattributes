@@ -1,3 +1,37 @@
+# Normalize line endings and mark binary files
+* text=auto
+
+# Force LF for source files (keep repository consistent)
+*.php text eol=lf
+*.blade.php text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.html text eol=lf
+*.htm text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+*.env text eol=lf
+
+# Treat images and compiled assets as binary (no EOL conversion)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.webp binary
+*.pdf binary
+*.zip binary
+*.gz binary
+
+# Node / vendor lockfiles are text but keep default handling
+package-lock.json text eol=lf
+yarn.lock text eol=lf
+composer.lock text eol=lf
 * text=auto eol=lf
 
 *.blade.php diff=html
