@@ -4,7 +4,12 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('kerinci');
 });
 
 Route::resource('wisata', WisataController::class);
+
+// Simple page route for Danau Kerinci
+Route::get('/kerinci', function () {
+    return view('kerinci');
+});
