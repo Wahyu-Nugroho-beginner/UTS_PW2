@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('email', 100)->unique();
             $table->string('username', 50);
-            $table->string('password', 50);
+            $table->string('password'); // Hapus , 50 agar jadi VARCHAR(255)
             $table->timestamps();
         });
 

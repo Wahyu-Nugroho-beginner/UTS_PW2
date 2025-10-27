@@ -20,7 +20,7 @@ class WisataController extends Controller
      */
     public function create()
     {
-        //
+        return view('Desa Wisata.Main.user.register');
     }
 
     /**
@@ -28,7 +28,24 @@ class WisataController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validasi input
+        $validated = $request->validate([
+            'username' => 'required|string|max:50',
+            'password' => 'required|string|max:50',
+            'email'    => 'required|email|max:100|unique:login_users,email',
+        ]);
+
+        // Simpan ke database
+        \DB::table('login_users')->insert([
+            'username' => $validated['username'],
+            'password' => bcrypt($validated['password']), // gunakan bcrypt untuk keamanan
+            'email'    => $validated['email'],
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        // Redirect dengan pesan sukses
+        return redirect()->route('register.create')->with('success', 'Registrasi berhasil!');
     }
 
     /**
