@@ -21,14 +21,26 @@
                     <i class="bi bi-house-door-fill" style="font-size:1.25rem"></i>
                 </div>
                 <div class="btn-group">
-                    <button class="btn nav-pill px-4">WISATA <i class="bi bi-caret-down-fill ms-2"></i></button>
+                    <div class="btn-group">
+                        <button type="button" class="btn nav-pill dropdown-toggle px-4" data-bs-toggle="dropdown" aria-expanded="false">
+                            WISATA
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ route('wisata.show','kebun-teh') }}">Kebun Teh</a></li>
+                            <li><a class="dropdown-item" href="{{ route('wisata.show','kebun-kayu-manis') }}">Kebun Kayu Manis</a></li>
+                            <li><a class="dropdown-item" href="{{ route('wisata.show','kebun-strawberry') }}">Kebun Strawberry</a></li>
+                            <li><a class="dropdown-item" href="{{ route('wisata.show','gunung-kerinci') }}">Gunung Kerinci</a></li>
+                            <li><a class="dropdown-item" href="{{ route('wisata.show','air-terjun') }}">Air Terjun</a></li>
+                            <li><a class="dropdown-item" href="{{ route('wisata.show','danau-kerinci') }}">Danau Kerinci</a></li>
+                        </ul>
+                    </div>
                     <button class="btn nav-pill px-4 ms-2">FASILITAS <i class="bi bi-caret-down-fill ms-2"></i></button>
                 </div>
             </div>
 
             <div class="d-flex ms-auto align-items-center gap-2">
                 <i class="bi bi-cart" style="font-size:1.5rem"></i>
-                <button class="btn btn-outline-secondary">Sign in</button>
+                <button class="btn btn-outline-secondary">Login</button>
                 <button class="btn btn-dark">Register</button>
             </div>
         </div>
@@ -37,7 +49,7 @@
     <main class="container hero my-5">
         <div class="row align-items-center">
             <div class="col-lg-7">
-                <h2 class="section-title">DANAU KERINCI</h2>
+                <h2 class="section-title">KEBUN STRAWBERRY</h2>
                 <p class="text-justify mt-3">
                     Terletak di wilayah Kabupaten Kerinci, Provinsi Jambi, tidak jauh dari kawasan Kayu Aro, terdapat sebuah destinasi alam yang menakjubkan Danau Kerinci. Danau ini merupakan danau alami terbesar di Provinsi Jambi, dengan luas mencapai sekitar 4.200 hektar, berada di ketinggian ±783 meter di atas permukaan laut.
                 </p>
@@ -50,7 +62,7 @@
             </div>
             <div class="col-lg-5 text-center mt-4 mt-lg-0">
                 <div class="img-frame mx-auto" style="max-width:420px">
-                    <img src="{{ asset('images/danau-kerinci.jpg') }}" alt="Danau Kerinci" onerror="this.src='https://via.placeholder.com/600x400?text=Danau+Kerinci'">
+                    <img src="{{ asset('images/kebun_strawberry.png') }}" alt="Danau Kerinci" onerror="this.src='https://via.placeholder.com/600x400?text=Danau+Kerinci'">
                 </div>
                 <p class="mt-3">Lokasi: Kebun Baru, Kecamatan Kayu Aro Barat, Kabupaten Kerinci, Jambi</p>
             </div>

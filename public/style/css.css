@@ -18,8 +18,8 @@
 		.section-title{color:var(--title-green); font-weight:800; letter-spacing:2px; font-size:2rem}
 		.text-justify{text-align:justify}
 		/* image frame */
-		.img-frame{border-radius:18px; overflow:hidden; background:#fff; box-shadow:0 6px 0 rgba(0,0,0,0.06), 0 16px 30px rgba(0,0,0,0.12); padding:8px}
-		.img-frame img{display:block; width:100%; height:auto; border-radius:12px}
+		.img-frame{border-radius:18px; overflow:hidden; background:#fff; box-shadow:0 0px 0 rgba(0,0,0,0.06), 0 16px 30px rgba(0,0,0,0.12); padding:8px}
+		.img-frame img{display:block; width:100%; height:auto; border-radius:0px}
 		/* small footer */
 		.trademark{font-size:0.8rem; color:#666; margin-top:28px}
 		/* responsive tweaks */

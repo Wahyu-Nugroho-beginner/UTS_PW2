@@ -20,14 +20,35 @@
                     <i class="bi bi-house-door-fill" style="font-size:1.25rem"></i>
                 </div>
                 <div class="btn-group">
-                    <button class="btn nav-pill px-4">WISATA <i class="bi bi-caret-down-fill ms-2"></i></button>
-                    <button class="btn nav-pill px-4 ms-2">FASILITAS <i class="bi bi-caret-down-fill ms-2"></i></button>
+                    <div class="btn-group">
+                        <button type="button" class="btn nav-pill dropdown-toggle px-4" data-bs-toggle="dropdown" aria-expanded="false">
+                            WISATA
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ route('wisata.show','kebun-teh') }}">Kebun Teh</a></li>
+                            <li><a class="dropdown-item" href="{{ route('wisata.show','kebun-kayu-manis') }}">Kebun Kayu Manis</a></li>
+                            <li><a class="dropdown-item" href="{{ route('wisata.show','kebun-strawberry') }}">Kebun Strawberry</a></li>
+                            <li><a class="dropdown-item" href="{{ route('wisata.show','gunung-kerinci') }}">Gunung Kerinci</a></li>
+                            <li><a class="dropdown-item" href="{{ route('wisata.show','air-terjun') }}">Air Terjun</a></li>
+                            <li><a class="dropdown-item" href="{{ route('wisata.show','danau-kerinci') }}">Danau Kerinci</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                            <button type="button" class="btn nav-pill dropdown-toggle px-4" data-bs-toggle="dropdown" aria-expanded="false">
+                                FASILITAS
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/wisata/kebun-teh">Home Stay</a></li>
+                                <li><a class="dropdown-item" href="/wisata/kebun-kayu-manis">ATV</a></li>
+                                <li><a class="dropdown-item" href="/wisata/kebun-strawberry">Makan Gratis</a></li>
+                            </ul>
+                        </div>
                 </div>
             </div>
 
             <div class="d-flex ms-auto align-items-center gap-2">
                 <i class="bi bi-cart" style="font-size:1.5rem"></i>
-                <button class="btn btn-outline-secondary">Sign in</button>
+                <button class="btn btn-outline-secondary">Login</button>
                 <button class="btn btn-dark">Register</button>
             </div>
         </div>
