@@ -7,7 +7,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-<<<<<<< HEAD
+
 // If you still want the resourceful routes, keep this; otherwise the single show route below will handle listing individual pages.
 // Route::resource('wisata', WisataController::class);
 
@@ -18,7 +18,7 @@ Route::get('/wisata/{slug}', [WisataController::class, 'show'])->name('wisata.sh
 Route::get('/kerinci', function () {
     return view('Desa Wisata.Main.wisata.danau-kerinci');
 });
-=======
+
 // Simple page route for Danau Kerinci
 Route::get('/kerinci', function () {
     return view('kerinci');
@@ -26,4 +26,3 @@ Route::get('/kerinci', function () {
 
 Route::get('/register', [WisataController::class, 'create'])->name('register.create');
 Route::post('/register', [WisataController::class, 'store'])->name('register.store');
->>>>>>> 11d7a5cae7f776183327f6a6e454ee493c3b2f80
