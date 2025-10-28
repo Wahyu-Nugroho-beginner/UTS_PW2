@@ -111,4 +111,32 @@ class WisataController extends Controller
     {
         //
     }
+
+    /**
+     * Show the login form.
+     */
+    public function showLoginForm()
+    {
+        return view('Desa Wisata.Main.user.login');
+    }
+
+    /**
+     * Handle login request.
+     */
+    public function login(Request $request)
+    {
+        $request->validate([
+            'username' => 'required|string|max:50',
+            'password' => 'required|string|max:50',
+        ]);
+
+        $user = \DB::table('login_users')->where('username', $request->username)->first();
+
+        if ($user && \Hash::check($request->password, $user->password)) {
+            session(['user_id' => $user->id, 'username' => $user->username]);
+            return redirect('/')->with('success', 'Login berhasil!');
+        }
+
+        return back()->with('error', 'Username atau password salah!');
+    }
 }
