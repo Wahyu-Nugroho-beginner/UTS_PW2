@@ -38,3 +38,6 @@
 	.kerinci-page .brand-row { display:flex; align-items:center; gap:12px; }
 	.kerinci-page .site-title { font-family: 'Dela Gothic One', sans-serif; font-size:1.3rem; }
 	.kerinci-page .img-frame img { width:100%; height:auto; border-radius:6px; }
+	a {
+		color : black
+	}

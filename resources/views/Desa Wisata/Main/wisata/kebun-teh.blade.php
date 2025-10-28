@@ -17,9 +17,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container">
             <div class="d-flex align-items-center gap-3">
-                <div class="home-icon">
+                <a class="home-icon" href="{{ url('/')}}">
                     <i class="bi bi-house-door-fill" style="font-size:1.25rem"></i>
-                </div>
+                </a>
 
                 <div class="btn-group">
                     <button type="button" class="btn nav-pill dropdown-toggle px-4" data-bs-toggle="dropdown" aria-expanded="false">
