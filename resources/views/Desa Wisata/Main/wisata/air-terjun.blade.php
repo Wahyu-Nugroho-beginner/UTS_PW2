@@ -49,8 +49,8 @@
 
             <div class="d-flex ms-auto align-items-center gap-2">
                 <i class="bi bi-cart" style="font-size:1.5rem"></i>
-                <button class="btn btn-outline-secondary">Login</button>
-                <button class="btn btn-dark">Register</button>
+                <a href="{{ url('/login') }}" class="btn btn-outline-secondary">Login</a>
+                <a href="{{ route('register.create') }}" class="btn btn-dark">Register</a>
             </div>
         </div>
     </nav>
