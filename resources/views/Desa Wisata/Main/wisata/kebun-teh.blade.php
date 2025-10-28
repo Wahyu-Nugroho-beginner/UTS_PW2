@@ -1,6 +1,6 @@
 @extends('desa wisata.layout.master')
 
-@section('title', 'Halaman Kerinci')
+@section('title', 'Halaman Kebun Teh')
 
 @section('content')
 <!doctype html>
@@ -20,31 +20,31 @@
                 <div class="home-icon">
                     <i class="bi bi-house-door-fill" style="font-size:1.25rem"></i>
                 </div>
+
                 <div class="btn-group">
-                    <div class="btn-group">
-                        <button type="button" class="btn nav-pill dropdown-toggle px-4" data-bs-toggle="dropdown" aria-expanded="false">
-                            WISATA
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ route('wisata.show','kebun-teh') }}">Kebun Teh</a></li>
-                            <li><a class="dropdown-item" href="{{ route('wisata.show','kebun-kayu-manis') }}">Kebun Kayu Manis</a></li>
-                            <li><a class="dropdown-item" href="{{ route('wisata.show','kebun-strawberry') }}">Kebun Strawberry</a></li>
-                            <li><a class="dropdown-item" href="{{ route('wisata.show','gunung-kerinci') }}">Gunung Kerinci</a></li>
-                            <li><a class="dropdown-item" href="{{ route('wisata.show','air-terjun') }}">Air Terjun</a></li>
-                            <li><a class="dropdown-item" href="{{ route('wisata.show','danau-kerinci') }}">Danau Kerinci</a></li>
-                        </ul>
-                    </div>
+                    <button type="button" class="btn nav-pill dropdown-toggle px-4" data-bs-toggle="dropdown" aria-expanded="false">
+                        WISATA
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{ route('wisata.show','kebun-teh') }}">Kebun Teh</a></li>
+                        <li><a class="dropdown-item" href="{{ route('wisata.show','kebun-kayu-manis') }}">Kebun Kayu Manis</a></li>
+                        <li><a class="dropdown-item" href="{{ route('wisata.show','kebun-strawberry') }}">Kebun Strawberry</a></li>
+                        <li><a class="dropdown-item" href="{{ route('wisata.show','gunung-kerinci') }}">Gunung Kerinci</a></li>
+                        <li><a class="dropdown-item" href="{{ route('wisata.show','air-terjun') }}">Air Terjun</a></li>
+                        <li><a class="dropdown-item" href="{{ route('wisata.show','danau-kerinci') }}">Danau Kerinci</a></li>
+                    </ul>
                     <button class="btn nav-pill px-4 ms-2">FASILITAS <i class="bi bi-caret-down-fill ms-2"></i></button>
                 </div>
             </div>
 
             <div class="d-flex ms-auto align-items-center gap-2">
                 <i class="bi bi-cart" style="font-size:1.5rem"></i>
-                <button class="btn btn-outline-secondary">Login</button>
-                <button class="btn btn-dark">Register</button>
+                <a href="{{ url('/login') }}" class="btn btn-outline-secondary">Login</a>
+                <a href="{{ route('register.create') }}" class="btn btn-dark">Register</a>
             </div>
         </div>
     </nav>
+
 
     <main class="container hero my-5">
         <div class="row align-items-center">
@@ -62,7 +62,7 @@
             </div>
             <div class="col-lg-5 text-center mt-4 mt-lg-0">
                 <div class="img-frame mx-auto" style="max-width:420px">
-                    <img src="{{ asset('images/kebun_strawberry.png') }}" alt="Danau Kerinci" onerror="this.src='https://via.placeholder.com/600x400?text=Danau+Kerinci'">
+                    <img src="{{ asset('images/kebun_strawberry.png') }}" alt="Kebun Teh" onerror="this.src='https://via.placeholder.com/600x400?text=Kebun+Teh'">
                 </div>
                 <p class="mt-3">Lokasi: Kebun Baru, Kecamatan Kayu Aro Barat, Kabupaten Kerinci, Jambi</p>
             </div>
@@ -70,8 +70,8 @@
 
     </main>
 
+    {{-- Jika layout belum menyertakan JS, tambahkan; biasanya script berada di master --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
     @endsection
 </body>
 </html>
