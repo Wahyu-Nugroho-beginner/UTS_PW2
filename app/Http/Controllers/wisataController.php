@@ -63,7 +63,22 @@ class WisataController extends Controller
         if (View::exists($viewName)) {
             return view($viewName);
         }
+        // fallback: 404
+        abort(404);
+    }
 
+    /**
+     * Display the specified fasilitas page.
+     */
+    public function showFasilitas(string $slug)
+    {
+        // map slug to view file under resources/views/Desa Wisata/Main/Fasilitas/
+        $viewBase = 'Desa Wisata.Main.Fasilitas.';
+        $viewName = $viewBase . $slug;
+
+        if (View::exists($viewName)) {
+            return view($viewName);
+        }
         // fallback: 404
         abort(404);
     }
