@@ -83,6 +83,11 @@ class WisataController extends Controller
         abort(404);
     }
 
+    public function showProduk()
+    {
+        return view('Desa Wisata.Main.daftar produk_store.store');
+    }
+
     /**
      * Show the form for editing the specified resource.
      */

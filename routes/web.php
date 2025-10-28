@@ -16,8 +16,9 @@ Route::get('/kerinci', function () {
 
 Route::get('/register', [WisataController::class, 'create'])->name('register.create');
 Route::post('/register', [WisataController::class, 'store'])->name('register.store');
-
 Route::get('/fasilitas/{slug}', [WisataController::class, 'showFasilitas'])->name('fasilitas.show');
+route::get('/produk/store', [WisataController::class, 'showProduk'])->name('produk.showProduk');
+
 
 Route::get('/login', [WisataController::class, 'showLoginForm'])->name('login.form');
 Route::post('/login', [WisataController::class, 'login'])->name('login.store');

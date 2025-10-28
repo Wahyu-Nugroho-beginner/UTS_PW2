@@ -16,9 +16,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container">
             <div class="d-flex align-items-center gap-3">
-                <div class="home-icon">
+                <a class="home-icon" href="{{ url('/') }}">
                     <i class="bi bi-house-door-fill" style="font-size:1.25rem"></i>
-                </div>
+                </a>
                 <div class="btn-group">
                     <div class="btn-group">
                         <button type="button" class="btn nav-pill dropdown-toggle px-4" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,7 +47,7 @@
             </div>
 
             <div class="d-flex ms-auto align-items-center gap-2">
-                <i class="bi bi-cart" style="font-size:1.5rem"></i>
+                <a class="bi bi-cart" style="font-size:1.5rem" href="{{ route('produk.showProduk', 'store')}}"></a>
                 <a href="{{ url('/login') }}" class="btn btn-outline-secondary">Login</a>
                 <a href="{{ route('register.create') }}" class="btn btn-dark">Register</a>
             </div>
