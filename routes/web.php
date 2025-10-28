@@ -18,3 +18,6 @@ Route::get('/register', [WisataController::class, 'create'])->name('register.cre
 Route::post('/register', [WisataController::class, 'store'])->name('register.store');
 
 Route::get('/fasilitas/{slug}', [WisataController::class, 'showFasilitas'])->name('fasilitas.show');
+
+Route::get('/login', [WisataController::class, 'showLoginForm'])->name('login.form');
+Route::post('/login', [WisataController::class, 'login'])->name('login.store');
