@@ -40,7 +40,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{ route('fasilitas.show', 'homestay') }}">Home Stay</a></li>
                                 <li><a class="dropdown-item" href="{{ route('fasilitas.show', 'atv') }}">ATV</a></li>
-                                <li><a class="dropdown-item" href="{{ route('fasilitas.show', 'makan-gratis') }}">Makan Gratis</a></li>
+                                <li><a class="dropdown-item" href="{{ route('fasilitas.show', 'makanan') }}">Makan Gratis</a></li>
                             </ul>
                         </div>
                 </div>
