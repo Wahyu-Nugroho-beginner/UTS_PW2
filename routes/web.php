@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('index');
+    return view('desa wisata.index');
 });
 
 
@@ -26,3 +26,5 @@ Route::get('/kerinci', function () {
 
 Route::get('/register', [WisataController::class, 'create'])->name('register.create');
 Route::post('/register', [WisataController::class, 'store'])->name('register.store');
+
+Route::get('/fasilitas/{slug}', [WisataController::class, 'showFasilitas'])->name('fasilitas.show');
