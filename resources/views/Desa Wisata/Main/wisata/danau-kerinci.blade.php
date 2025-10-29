@@ -47,7 +47,7 @@
             </div>
 
             <div class="d-flex ms-auto align-items-center gap-2">
-                <i class="bi bi-cart" style="font-size:1.5rem"></i>
+                <a class="bi bi-cart" style="font-size:1.5rem" href="{{ route('produk.showProduk', 'store')}}"></a>
                 <a href="{{ url('/login') }}" class="btn btn-outline-secondary">Login</a>
                 <a href="{{ route('register.create') }}" class="btn btn-dark">Register</a>
             </div>
@@ -73,7 +73,7 @@
                 <div class="img-frame mx-auto" style="max-width:420px">
                     <img src="{{ asset('images/danau_kerinci.png') }}" alt="Danau Kerinci" onerror="this.src='https://via.placeholder.com/600x400?text=Danau+Kerinci'">
                 </div>
-                <p class="mt-3">Lokasi: Kebun Baru, Kecamatan Kayu Aro Barat, Kabupaten Kerinci, Jambi</p>
+                <p class="mt-3">Lokasi: Kabupaten Kerinci, Jambi</p>
             </div>
         </div>
 
