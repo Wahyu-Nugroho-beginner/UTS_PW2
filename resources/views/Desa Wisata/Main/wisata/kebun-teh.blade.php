@@ -33,7 +33,17 @@
                         <li><a class="dropdown-item" href="{{ route('wisata.show','air-terjun') }}">Air Terjun</a></li>
                         <li><a class="dropdown-item" href="{{ route('wisata.show','danau-kerinci') }}">Danau Kerinci</a></li>
                     </ul>
-                    <button class="btn nav-pill px-4 ms-2">FASILITAS <i class="bi bi-caret-down-fill ms-2"></i></button>
+                </div>
+                   <div class="btn-group">
+                            <button type="button" class="btn nav-pill dropdown-toggle px-4" data-bs-toggle="dropdown" aria-expanded="false">
+                                FASILITAS
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{{ route('fasilitas.show', 'homestay') }}">Home Stay</a></li>
+                                <li><a class="dropdown-item" href="{{ route('fasilitas.show', 'atv') }}">ATV</a></li>
+                                <li><a class="dropdown-item" href="{{ route('fasilitas.show', 'makanan') }}">Makan Gratis</a></li>
+                            </ul>
+                        </div>
                 </div>
             </div>
 

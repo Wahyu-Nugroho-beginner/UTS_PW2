@@ -27,7 +27,7 @@
                             <input type="password" class="form-control" id="password" name="password" required>
                         </div>
                         <div class="d-flex justify-content-between">
-                            <a href="{{ url()->previous() }}" class="btn btn-secondary">Kembali</a>
+                                <a href="{{ url('/') }}" class="btn btn-secondary">Kembali</a>
                             <button type="submit" class="btn btn-primary">Login</button>
                         </div>
                     </form>
