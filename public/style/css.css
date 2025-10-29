@@ -3,7 +3,7 @@
 		body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:#fff; color:#222}
 		/* Top banner */
 		.top-banner{background:var(--teal); border-bottom-left-radius:36px; border-bottom-right-radius:36px; padding:28px 20px}
-		.brand-row{display:flex; align-items:center; gap:18px}
+		.brand-row{display:flex; align-items:center; gap:40px}
 		.brand-logo{width:72px; height:72px; display:inline-flex; align-items:center; justify-content:center}
 		.site-title{font-family:'Dela Gothic One', cursive; font-size:3.2rem; letter-spacing:4px; margin:0}
         /* navbar area */
