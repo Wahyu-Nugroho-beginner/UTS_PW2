@@ -41,3 +41,45 @@
 	a {
 		color : black
 	}
+
+    /* Login page styles */
+    .login-container {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .login-card {
+        border-radius: 15px;
+        background-color: #B4E4E9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .login-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .login-form-control {
+        border-radius: 25px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 2px solid #333;
+        background-color: white;
+    }
+    .custom-btn {
+        border-radius: 25px;
+        padding: 8px 30px;
+        background-color: white;
+        border: 2px solid #333;
+        color: #333;
+        font-weight: 500;
+        min-width: 120px;
+    }
+    .custom-btn:hover {
+        background-color: #eee;
+    }
+    .footer-text {
+        font-size: 0.75rem;
+        margin-top: 2rem;
+        text-align: center;
+        color: #333;
+    }
