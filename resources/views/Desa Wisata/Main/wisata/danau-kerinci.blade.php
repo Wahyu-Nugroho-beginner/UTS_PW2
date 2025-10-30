@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container">
             <div class="d-flex align-items-center gap-3">
-                <a class="home-icon" href="{{ url('/')}}">
+                <a class="home-icon" href="{{ route('home.index2') }}">
                     <i class="bi bi-house-door-fill" style="font-size:1.25rem"></i>
                 </a>
 
@@ -46,11 +46,11 @@
                 </div>
             </div>
 
-            <div class="d-flex ms-auto align-items-center gap-2">
+            <!-- <div class="d-flex ms-auto align-items-center gap-2">
                 <a class="bi bi-cart" style="font-size:1.5rem" href="{{ route('produk.showProduk', 'store')}}"></a>
                 <a href="{{ url('/login') }}" class="btn btn-outline-secondary">Login</a>
                 <a href="{{ route('register.create') }}" class="btn btn-dark">Register</a>
-            </div>
+            </div> -->
         </div>
     </nav>
 

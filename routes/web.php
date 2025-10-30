@@ -6,6 +6,11 @@ Route::get('/', function () {
     return view('Desa Wisata.index'); 
 });
 
+// Shortcut route to the alternate index page (index2)
+Route::get('/index2', function () {
+    return view('Desa Wisata.index2');
+})->name('home.index2');
+
 // Single slug-based route for wisata pages
 Route::get('/wisata/{slug}', [WisataController::class, 'show'])->name('wisata.show');
 
