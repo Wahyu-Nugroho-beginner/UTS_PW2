@@ -134,7 +134,8 @@ class WisataController extends Controller
 
         if ($user && \Hash::check($request->password, $user->password)) {
             session(['user_id' => $user->id, 'username' => $user->username]);
-            return redirect('/')->with('success', 'Login berhasil!');
+            // return the index2 view on successful login
+            return view('Desa Wisata.index2')->with('success', 'Login berhasil!');
         }
 
         return back()->with('error', 'Username atau password salah!');
