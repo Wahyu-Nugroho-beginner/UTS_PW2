@@ -83,3 +83,32 @@
         text-align: center;
         color: #333;
     }
+
+    /* ATV / Fasilitas page styles */
+    .fasilitas-banner { background:#000; color:#fff; position:relative; overflow:hidden }
+    .fasilitas-banner .banner-images { display:flex; gap:0 }
+    .fasilitas-banner .banner-img { flex:1 1 33%; position:relative }
+    .fasilitas-banner .banner-img img { width:100%; height:360px; object-fit:cover; display:block }
+    .fasilitas-banner .banner-overlay { position:absolute; left:0; right:0; top:0; bottom:0; display:flex; align-items:center; justify-content:center; pointer-events:none }
+    .fasilitas-banner .banner-overlay h2 { font-size:4rem; letter-spacing:6px; color:#fff; text-align:center; background:rgba(0,0,0,0.35); padding:10px 40px; border-radius:6px }
+
+    .feature-row { display:flex; justify-content:center; gap:0; margin-top:-40px; }
+    .feature-box { flex:0 0 200px; background:#111; color:#fff; padding:28px 18px; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center }
+    .feature-box + .feature-box { border-left:4px solid #222 }
+    .feature-box.alt { background:#6d6d6d }
+    .feature-icon { font-size:2rem; margin-bottom:12px }
+    .feature-title { font-weight:800; letter-spacing:1px }
+
+    .atv-section { padding:60px 0 30px 0; text-align:center }
+    .atv-cards { display:flex; gap:24px; justify-content:center; flex-wrap:wrap }
+    .atv-card { width:260px; background:#fff; border-radius:8px; box-shadow:0 8px 18px rgba(0,0,0,0.12); overflow:hidden }
+    .atv-card img { width:100%; height:160px; object-fit:cover }
+    .atv-card .card-body { padding:14px }
+
+    @media (max-width:768px) {
+        .fasilitas-banner .banner-img img { height:220px }
+        .fasilitas-banner .banner-overlay h2 { font-size:2.2rem; padding:8px 18px }
+        .feature-row { flex-direction:column; margin-top:0 }
+        .feature-box { width:100%; border-left:0 }
+        .atv-card { width:100%; max-width:420px }
+    }

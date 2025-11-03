@@ -44,7 +44,16 @@
                                 <li><a class="dropdown-item" href="{{ route('fasilitas.show', 'makanan') }}">Makan Gratis</a></li>
                             </ul>
                         </div>
+                         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+               <div class="container">
+                   <div class="d-flex ms-auto align-items-center gap-2">
+                        <a class="bi bi-cart" style="font-size:1.5rem" href="{{ route('produk.showProduk', 'store')}}"></a> 
+                  </div>
+
+
+              </div>
                 </div>
+                
             </div>
 
             <!-- <div class="d-flex ms-auto align-items-center gap-2">
