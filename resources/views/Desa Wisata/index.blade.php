@@ -15,6 +15,9 @@
  
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container">
+            <div>
+                <P class="text-danger" class="text-decoration-line-through">Silahkan Login Terlebih Dahulu Untuk Info Lebih Lanjut</P>
+            </div>
             <!-- <div class="d-flex align-items-center gap-3">
                 <a class="home-icon" href="{{ url('/') }}">
                     <i class="bi bi-house-door-fill" style="font-size:1.25rem"></i>

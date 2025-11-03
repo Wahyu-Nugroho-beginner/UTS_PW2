@@ -88,9 +88,10 @@
     .fasilitas-banner { background:#000; color:#fff; position:relative; overflow:hidden }
     .fasilitas-banner .banner-images { display:flex; gap:0 }
     .fasilitas-banner .banner-img { flex:1 1 33%; position:relative }
-    .fasilitas-banner .banner-img img { width:100%; height:360px; object-fit:cover; display:block }
+    .fasilitas-banner .banner-img img { width:100%; height:250px; object-fit:cover; display:block }
     .fasilitas-banner .banner-overlay { position:absolute; left:0; right:0; top:0; bottom:0; display:flex; align-items:center; justify-content:center; pointer-events:none }
-    .fasilitas-banner .banner-overlay h2 { font-size:4rem; letter-spacing:6px; color:#fff; text-align:center; background:rgba(0,0,0,0.35); padding:10px 40px; border-radius:6px }
+    .fasilitas-banner .banner-overlay h1 {font-family: 'Franklin Gothic Medium'; font-size:6rem; letter-spacing:6px; color:#fff; text-align:center; padding:10px 40px; border-radius:6px ;}
+    .fasilitas-banner .banner-overlay h2 {font-family: 'Franklin Gothic Medium'; font-size:4rem; letter-spacing:6px; color:#fff; text-align:center; padding:10px 40px; border-radius:6px ;}
 
     .feature-row { display:flex; justify-content:center; gap:0; margin-top:-40px; }
     .feature-box { flex:0 0 200px; background:#111; color:#fff; padding:28px 18px; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center }
