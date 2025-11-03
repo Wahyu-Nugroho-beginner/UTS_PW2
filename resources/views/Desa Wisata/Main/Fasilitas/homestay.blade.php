@@ -17,7 +17,7 @@
         <div class="container">
             <div class="d-flex align-items-center gap-3">
                 <a class="home-icon" href="{{ route('home.index2') }}">
-                    <i class="bi bi-house-door-fill" style="font-size:1.25rem"></i>
+                    <i class="bi bi-house-door-fill" style="font-size:1.25rem"></i> 
                 </a>
                 <div class="btn-group">
                     <div class="btn-group">
@@ -110,5 +110,3 @@
     @endsection
 </body>
 </html>
-
-
