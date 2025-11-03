@@ -85,7 +85,9 @@ class WisataController extends Controller
 
     public function showProduk()
     {
-        return view('Desa Wisata.Main.daftar produk_store.store');
+        // fetch products from 'produks' table and pass to view
+        $produks = \DB::table('produks')->orderBy('id', 'desc')->get();
+        return view('Desa Wisata.Main.daftar produk_store.store', compact('produks'));
     }
 
     /**
