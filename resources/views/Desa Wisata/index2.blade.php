@@ -3,7 +3,6 @@
 @section('title', 'Home')
 
 @section('content')
-<<<<<<< HEAD
 
 <!doctype html>
 <html lang="en">
@@ -11,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Desa Wisata Kayu Aro</title>
-    <style>
+    <!-- <style>
         .dropdown-item {
             padding: .5rem 1rem;
         }
@@ -29,10 +28,8 @@
             font-size: 1.1rem;
             margin-right: 5px;
         }
-    </style>
+    </style> -->
 <body>
-=======
->>>>>>> 663ffa3f4fc2535d68b36a6134f469f97efc8cb5
  
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container">

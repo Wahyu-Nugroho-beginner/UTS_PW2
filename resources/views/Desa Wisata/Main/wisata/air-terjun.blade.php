@@ -5,7 +5,7 @@
 
 @section('content')
 <style>
-    .dropdown-item {
+    /* .dropdown-item {
         padding: .5rem 1rem;
     }
     .dropdown-item button {
@@ -21,7 +21,7 @@
     .bi-person-circle {
         font-size: 1.1rem;
         margin-right: 5px;
-    }
+    } */
 </style>
 
      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
