@@ -1,8 +1,9 @@
 @extends('desa wisata.layout.master')
 
-@section('title', 'Halaman Home')
+@section('title', 'Home')
 
 @section('content')
+<<<<<<< HEAD
 
 <!doctype html>
 <html lang="en">
@@ -30,6 +31,8 @@
         }
     </style>
 <body>
+=======
+>>>>>>> 663ffa3f4fc2535d68b36a6134f469f97efc8cb5
  
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container">
@@ -113,8 +116,4 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    @endsection
-</body>
-</html>
-
-
+@endsection
