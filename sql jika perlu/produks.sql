@@ -47,6 +47,14 @@ INSERT INTO `produks` (`id`, `nama_produk`, `jumlah_produk`, `harga`, `gambar`, 
 (3, 'Hiasan dinding kayu ukir motif alam Kerinci', 60, 90000, 'hiasan_kayu_ukir_kerinci.jpg', NULL, NULL),
 (4, 'Tas kecil souvenir rotan/anyaman Kerinci', 90, 55000, 'tas_rotan_kerinci_souvenir.jpg', NULL, NULL),
 (5, 'Kerajinan bambu pelita / lampu hias bambu Kerinci', 70, 65000, 'lampu_bambu_kerinci.jpg', NULL, NULL);
+(6, 'buah strawberry segar', 200, 15000, 'buah_strawberry.jpg', NULL, NULL),
+(7, 'teh kayu aro', 150, 25000, 'daun_teh.jpg', NULL, NULL),
+(8, 'dodol kentang', 80, 20000, 'dodol_kentang_kerinci.jpg', NULL, NULL),
+(9, 'kladito', 120, 30000, 'kladito.jpg', NULL, NULL),
+(10, 'kopi kayu aro', 180, 40000, 'kopi_arabika.jpg', NULL, NULL),
+(11, 'kue kembang', 90, 15000, 'kue_kembang.jpg', NULL, NULL),
+(12, 'madu hutan', 60, 50000, 'toples_madu.jpg', NULL, NULL);
+
 
 --
 -- Indexes for dumped tables
