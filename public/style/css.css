@@ -15,7 +15,7 @@
         .nav-link.active{color:#2f6f46!important}
         .dropdown-item:hover{background-color:var(--teal);color:#2f6f46}
         /* content */
-		.section-title{color:var(--title-green); font-weight:800; letter-spacing:2px; font-size:2rem}
+		.section-title{color:var(--title-green); font-weight:800; letter-spacing:2px; font-size:2rem; font-family: 'Franklin Gothic Medium';}
 		.text-justify{text-align:justify}
 		/* image frame */
 		.img-frame{border-radius:18px; overflow:hidden; background:#fff; box-shadow:0 0px 0 rgba(0,0,0,0.06), 0 16px 30px rgba(0,0,0,0.12); padding:8px}
