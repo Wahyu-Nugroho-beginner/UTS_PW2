@@ -46,7 +46,7 @@ INSERT INTO `produks` (`id`, `nama_produk`, `jumlah_produk`, `harga`, `gambar`, 
 (2, 'Tikar pandan Kerinci', 100, 30000, 'tikar_pandan_kerinci.jpg', NULL, NULL),
 (3, 'Hiasan dinding kayu ukir motif alam Kerinci', 60, 90000, 'hiasan_kayu_ukir_kerinci.jpg', NULL, NULL),
 (4, 'Tas kecil souvenir rotan/anyaman Kerinci', 90, 55000, 'tas_rotan_kerinci_souvenir.jpg', NULL, NULL),
-(5, 'Kerajinan bambu pelita / lampu hias bambu Kerinci', 70, 65000, 'lampu_bambu_kerinci.jpg', NULL, NULL);
+(5, 'lampu hias bambu Kerinci', 70, 65000, 'lampu_bambu_kerinci.jpg', NULL, NULL);
 (6, 'buah strawberry segar', 200, 15000, 'buah_strawberry.jpg', NULL, NULL),
 (7, 'teh kayu aro', 150, 25000, 'daun_teh.jpg', NULL, NULL),
 (8, 'dodol kentang', 80, 20000, 'dodol_kentang_kerinci.jpg', NULL, NULL),
