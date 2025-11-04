@@ -46,11 +46,10 @@
                         </div>
                          <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
                <div class="container">
-                   <div class="d-flex ms-auto align-items-center gap-2">
-                        <a class="bi bi-cart" style="font-size:1.5rem" href="{{ route('produk.showProduk', 'store')}}"></a> 
+                   <div class="d-flex ms-auto align-items-center gap-3">
+                        <a class="bi bi-cart" style="font-size:1.5rem" href="{{ route('produk.showProduk', 'store')}}"></a>
+                        <a href="{{ route('produk.checkout') }}" class="btn btn-primary">Checkout</a>
                   </div>
-
-
               </div>
                 </div>
                 
@@ -96,6 +95,9 @@
         @endforelse
     </div>
 
+    <div class="text-center mt-4">
+        <a href="{{ route('produk.checkout') }}" class="btn btn-primary btn-lg">Checkout</a>
+    </div>
 
 </main>
 

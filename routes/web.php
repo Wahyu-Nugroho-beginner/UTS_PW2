@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\WisataController;
+use App\Http\Controllers\CheckoutController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -22,7 +23,8 @@ Route::get('/kerinci', function () {
 Route::get('/register', [WisataController::class, 'create'])->name('register.create');
 Route::post('/register', [WisataController::class, 'store'])->name('register.store');
 Route::get('/fasilitas/{slug}', [WisataController::class, 'showFasilitas'])->name('fasilitas.show');
-route::get('/produk/store', [WisataController::class, 'showProduk'])->name('produk.showProduk');
+Route::get('/produk/store', [WisataController::class, 'showProduk'])->name('produk.showProduk');
+Route::get('/produk/checkout', [CheckoutController::class, 'index'])->name('produk.checkout');
 
 
 Route::get('/login', [WisataController::class, 'showLoginForm'])->name('login.form');

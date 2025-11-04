@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\DB;
 
 class WisataController extends Controller
 {
@@ -83,11 +84,16 @@ class WisataController extends Controller
         abort(404);
     }
 
-    public function showProduk()
+    public function showProduk($param = null)
     {
-        // fetch products from 'produks' table and pass to view
-        $produks = \DB::table('produks')->orderBy('id', 'desc')->get();
-        return view('Desa Wisata.Main.daftar produk_store.store', compact('produks'));
+        $produks = DB::table('produks')->get();
+        return view('desa wisata.main.daftar produk_store.store', ['produks' => $produks]);
+    }
+
+    public function checkout()
+    {
+        $produks = DB::table('produks')->get();
+        return view('desa wisata.main.daftar produk_store.checkout', ['produks' => $produks]);
     }
 
     /**
