@@ -52,6 +52,26 @@
 
                 </div>
             </div>
+                                @if(session('user_id'))
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person-circle"></i> {{ session('username') }}
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="{{ route('profile.show') }}">Profile</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <form action="{{ route('logout') }}" method="POST" class="dropdown-item p-0">
+                                            @csrf
+                                            <button type="submit" class="dropdown-item text-danger">Logout</button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        @else
+                            <a href="{{ url('/login') }}" class="btn btn-outline-secondary">Login</a>
+                            <a href="{{ route('register.create') }}" class="btn btn-dark">Register</a>
+                        @endif
 
             <!-- <div class="d-flex ms-auto align-items-center gap-2">
                 <a class="bi bi-cart" style="font-size:1.5rem" href="{{ route('produk.showProduk', 'store')}}"></a>

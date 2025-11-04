@@ -141,11 +141,66 @@ class WisataController extends Controller
         $user = \DB::table('login_users')->where('username', $request->username)->first();
 
         if ($user && \Hash::check($request->password, $user->password)) {
+            session()->regenerate(); // Regenerate session ID untuk keamanan
             session(['user_id' => $user->id, 'username' => $user->username]);
-            // return the index2 view on successful login
-            return view('Desa Wisata.index2')->with('success', 'Login berhasil!');
+            // redirect to index2 with success message
+            return redirect()->route('home.index2')->with('success', 'Login berhasil!');
         }
 
         return back()->with('error', 'Username atau password salah!');
+    }
+
+    /**
+     * Display the user's profile.
+     */
+    public function profile()
+    {
+        $user = \DB::table('login_users')->where('id', session('user_id'))->first();
+        if (!$user) {
+            return redirect()->route('login');
+        }
+        return view('Desa Wisata.akun', compact('user'));
+    }
+
+    /**
+     * Show the form for editing the user's profile.
+     */
+    public function editProfile()
+    {
+        $user = \DB::table('login_users')->where('id', session('user_id'))->first();
+        if (!$user) {
+            return redirect()->route('login');
+        }
+        return view('Desa Wisata.edit-akun', compact('user'));
+    }
+
+    /**
+     * Update the user's profile.
+     */
+    public function updateProfile(Request $request)
+    {
+        $validated = $request->validate([
+            'email' => 'required|email|max:255|unique:login_users,email,' . session('user_id'),
+            'username' => 'required|string|max:50|unique:login_users,username,' . session('user_id'),
+        ]);
+
+        \DB::table('login_users')
+            ->where('id', session('user_id'))
+            ->update([
+                'email' => $validated['email'],
+                'username' => $validated['username'],
+                'updated_at' => now(),
+            ]);
+
+        return redirect()->route('profile.show')->with('success', 'Profil berhasil diperbarui!');
+    }
+
+    /**
+     * Handle user logout.
+     */
+    public function logout()
+    {
+        session()->forget(['user_id', 'username']);
+        return redirect()->route('login')->with('success', 'Berhasil logout!');
     }
 }

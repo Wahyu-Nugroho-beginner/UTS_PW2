@@ -9,10 +9,13 @@ Route::get('/', function () {
 
 // Shortcut route to the alternate index page (index2)
 Route::get('/index2', function () {
+    if (!session('user_id')) {
+        return redirect()->route('login')->with('error', 'Silakan login terlebih dahulu');
+    }
     return view('Desa Wisata.index2');
 })->name('home.index2');
 
-// Single slug-based route for wisata pages
+// Wisata pages
 Route::get('/wisata/{slug}', [WisataController::class, 'show'])->name('wisata.show');
 
 // Kalau ingin halaman kerinci tunggal, gunakan satu route (hapus duplikat)
@@ -27,5 +30,12 @@ Route::get('/produk/store', [WisataController::class, 'showProduk'])->name('prod
 Route::get('/produk/checkout', [CheckoutController::class, 'index'])->name('produk.checkout');
 
 
-Route::get('/login', [WisataController::class, 'showLoginForm'])->name('login.form');
+// Authentication Routes
+Route::get('/login', [WisataController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [WisataController::class, 'login'])->name('login.store');
+Route::post('/logout', [WisataController::class, 'logout'])->name('logout');
+
+// Profile Routes
+Route::get('/profile', [WisataController::class, 'profile'])->name('profile.show');
+Route::get('/profile/edit', [WisataController::class, 'editProfile'])->name('profile.edit');
+Route::post('/profile/update', [WisataController::class, 'updateProfile'])->name('profile.update');
