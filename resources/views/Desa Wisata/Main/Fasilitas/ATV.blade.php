@@ -98,11 +98,27 @@
 	</div>
 </div>
 
-<div class="banner-overlay my-5	">
-	<h2>LAYANAN KAMI</h2>
-</div>
+    <div class="banner-overlay">
+	    <h2>Model ATV</h2>
+    </div>
 
-    </main>
+<div class="fasilitas-banner" style="background-color:#ffffff; padding:20px 0;">
+    <div class="banner-images">
+        <div class="banner-img">
+            <img src="{{ asset('images/ATV-BG2.png') }}" alt="ATV 2" onerror="this.src='https://via.placeholder.com/800x360?text=ATV+2'">
+        </div>
+		<div class="banner-img">
+			<img src="{{ asset('images/ATV-BG1.png') }}" alt="ATV 1" onerror="this.src='https://via.placeholder.com/800x360?text=ATV+1'">
+		</div>
+		<div class="banner-img">
+			<img src="{{ asset('images/ATV-BG3.png') }}" alt="ATV 3" onerror="this.src='https://via.placeholder.com/800x360?text=ATV+3'">
+		</div>
+	</div>
+
+</main>
+<div class="banner-overlay">
+    <h2>CP: 08123456789</h2>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     @endsection
 </body>
