@@ -24,7 +24,7 @@
                     <div class="row mb-4">
                         <div class="col-md-4 text-center">
                             <div class="profile-img-container mb-3">
-                                <img src="{{ asset('images/default-avatar.png') }}" alt="Default Profile Picture" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                                <img src="{{ asset('images/blank profile.png') }}" alt="Default Profile Picture" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
                             </div>
                         </div>
                         <div class="col-md-8">
