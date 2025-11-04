@@ -70,27 +70,31 @@
 		</div>
 	</div>
 	<div class="banner-overlay">
-		<h1>ATV</h1>
+		<h1>HOMESTAY</h1>
 	</div>
 </div>
 
 <div class="feature-row z-1">
+    <div class="feature-box alt z-1">
+        <img src="{{ asset('images/obeng.png') }}" alt="Layanan" width="100 px">
+        <div class="feature-title">Layanan</div>
+    </div>
 	<div class="feature-box z-1">
-		<img src="{{ asset('images/gas.png') }}" alt="Reparasi Icon" width="75 px">
-		<div class="feature-title">BENSIN GRATIS</div>
+        <img src="{{ asset('images/gas.png') }}" alt="Wifi" width="75 px">
+		<div class="feature-title">Wi-Fi</div>
 	</div>
 	<div class="feature-box alt z-1">
-		<img src="{{ asset('images/obeng.png') }}" alt="Reparasi Icon" width="100 px">
-		<div class="feature-title">24 JAM REPARASI</div>
+        <img src="{{ asset('images/obeng.png') }}" alt="Jemputan" width="100 px">
+		<div class="feature-title">Jemputan <br>Bandara</div>
 	</div>
 	<div class="feature-box z-1">
-		<img src="{{ asset('images/jam.png') }}" alt="Reparasi Icon" width="75 px">
-		<div class="feature-title">TANPA BATAS WAKTU</div>
+        <img src="{{ asset('images/jam.png') }}" alt="Restoran" width="75 px">
+		<div class="feature-title">Restoran</div>
 	</div>
 </div>
 
     <div class="banner-overlay">
-	    <h2>Model ATV</h2>
+	    <h2>LAYANAN KAMI</h2>
     </div>
 
 <div class="fasilitas-banner" style="background-color:#ffffff; padding:20px 0;">

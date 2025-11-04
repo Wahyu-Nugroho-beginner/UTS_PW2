@@ -76,15 +76,15 @@
 
 <div class="feature-row z-1">
 	<div class="feature-box z-1">
-		<img src="{{ asset('images/gas.png') }}" alt="Reparasi Icon" width="75 px">
+		<img src="{{ asset('images/gas.png') }}" alt="Bensin" width="75 px">
 		<div class="feature-title">BENSIN GRATIS</div>
 	</div>
 	<div class="feature-box alt z-1">
-		<img src="{{ asset('images/obeng.png') }}" alt="Reparasi Icon" width="100 px">
+		<img src="{{ asset('images/obeng.png') }}" alt="Obeng" width="100 px">
 		<div class="feature-title">24 JAM REPARASI</div>
 	</div>
 	<div class="feature-box z-1">
-		<img src="{{ asset('images/jam.png') }}" alt="Reparasi Icon" width="75 px">
+		<img src="{{ asset('images/jam.png') }}" alt="Jam" width="75 px">
 		<div class="feature-title">TANPA BATAS WAKTU</div>
 	</div>
 </div>
@@ -96,13 +96,13 @@
 <div class="fasilitas-banner" style="background-color:#ffffff; padding:20px 0;">
     <div class="banner-images">
         <div class="banner-img">
-            <img src="{{ asset('images/ATV-BG2.png') }}" alt="ATV 2" onerror="this.src='https://via.placeholder.com/800x360?text=ATV+2'">
+            <img src="{{ asset('images/ATV-BG2.png') }}" alt="ATV-BG 2" onerror="this.src='https://via.placeholder.com/800x360?text=ATV+2'">
         </div>
 		<div class="banner-img">
-			<img src="{{ asset('images/ATV-BG1.png') }}" alt="ATV 1" onerror="this.src='https://via.placeholder.com/800x360?text=ATV+1'">
+			<img src="{{ asset('images/ATV-BG1.png') }}" alt="ATV-BG 1" onerror="this.src='https://via.placeholder.com/800x360?text=ATV+1'">
 		</div>
 		<div class="banner-img">
-			<img src="{{ asset('images/ATV-BG3.png') }}" alt="ATV 3" onerror="this.src='https://via.placeholder.com/800x360?text=ATV+3'">
+			<img src="{{ asset('images/ATV-BG3.png') }}" alt="ATV-BG 3" onerror="this.src='https://via.placeholder.com/800x360?text=ATV+3'">
 		</div>
 	</div>
 
