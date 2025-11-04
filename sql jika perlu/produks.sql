@@ -52,7 +52,7 @@ INSERT INTO `produks` (`id`, `nama_produk`, `jumlah_produk`, `harga`, `gambar`, 
 (8, 'dodol kentang', 80, 20000, 'dodol_kentang_kerinci.jpg', NULL, NULL),
 (9, 'kladito', 120, 30000, 'kladito.jpg', NULL, NULL),
 (10, 'kopi kayu aro', 180, 40000, 'kopi_arabika.jpg', NULL, NULL),
-(11, 'kue kembang', 90, 15000, 'kue_kembang.jpg', NULL, NULL),~
+(11, 'kue kembang', 90, 15000, 'kue_kembang.jpg', NULL, NULL),
 (12, 'madu hutan', 60, 50000, 'toples_madu.jpg', NULL, NULL);
 
 
