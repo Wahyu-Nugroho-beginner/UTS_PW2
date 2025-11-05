@@ -34,6 +34,19 @@
 	/* constrain framed images used in views */
 	.img-frame { max-width:420px; }
 
+
+    .ke-home {
+        color: white;
+        border-radius: 4px;
+        padding: 6px 0px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
 	/* Kerinci page specific overrides (uses body.kerinci-page) */
 	.kerinci-page .brand-row { display:flex; align-items:center; gap:12px; }
 	.kerinci-page .site-title { font-family: 'Dela Gothic One', sans-serif; font-size:1.3rem; }
