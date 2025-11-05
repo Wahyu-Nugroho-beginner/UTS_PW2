@@ -1,68 +1,37 @@
 @extends('desa wisata.layout.master')
 
-@section('title', 'Riwayat Pesanan')
+@section('title', 'Pesanan Saya')
 
 @section('content')
 <div class="container my-5">
-    <div class="row justify-content-center">
-        <div class="col-12">
-            <h2 class="mb-4">Riwayat Pesanan Saya</h2>
-
-            @if(session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
-            @endif
-
-            @if(session('error'))
-                <div class="alert alert-danger">
-                    {{ session('error') }}
-                </div>
-            @endif
-
-            @if($pesanans->isEmpty())
-                <div class="alert alert-info">
-                    Belum ada pesanan.
-                </div>
-            @else
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead class="table-primary">
-                            <tr>
-                                <th>No. Pesanan</th>
-                                <th>Produk</th>
-                                <th>Tanggal</th>
-                                <th>Total</th>
-                                <th>Status</th>
-                                <th>Alamat</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach($pesanans as $pesanan)
-                                <tr>
-                                    <td>#{{ $pesanan->id }}</td>
-                                    <td>{{ $pesanan->nama_produk }}</td>
-                                    <td>{{ date('d M Y H:i', strtotime($pesanan->created_at)) }}</td>
-                                    <td>Rp {{ number_format($pesanan->total_harga, 0, ',', '.') }}</td>
-                                    <td>
-                                        <span class="badge {{ $pesanan->status == 'completed' ? 'bg-success' : 'bg-warning' }}">
-                                            {{ ucfirst($pesanan->status) }}
-                                        </span>
-                                    </td>
-                                    <td>{{ $pesanan->alamat }}</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
-            @endif
-
-            <div class="mt-4">
-                <a href="{{ route('produk.showProduk', 'store') }}" class="btn btn-primary">
-                    <i class="bi bi-arrow-left"></i> Kembali ke Toko
-                </a>
-            </div>
+    <h3 class="mb-4">Daftar Pesanan Saya</h3>
+    @if($pesanans->isEmpty())
+        <div class="alert alert-info">Belum ada pesanan.</div>
+    @else
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>#</th>
+                        <th>Nama Produk</th>
+                        <th>Jumlah</th>
+                        <th>Total Harga</th>
+                        <th>Tanggal Pesanan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($pesanans as $i => $pesanan)
+                        <tr>
+                            <td>{{ $i+1 }}</td>
+                            <td>{{ $pesanan->nama_produk }}</td>
+                            <td>{{ $pesanan->jumlah_pesanan }}</td>
+                            <td>Rp {{ number_format($pesanan->total_harga, 0, ',', '.') }}</td>
+                            <td>{{ \Carbon\Carbon::parse($pesanan->tanggal_pesanan)->format('d-m-Y') }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
         </div>
-    </div>
+    @endif
 </div>
 @endsection
