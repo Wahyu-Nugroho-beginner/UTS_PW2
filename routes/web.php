@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\WisataController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\PesananController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -48,3 +49,8 @@ Route::post('/logout', [WisataController::class, 'logout'])->name('logout');
 Route::get('/profile', [WisataController::class, 'profile'])->name('profile.show');
 Route::get('/profile/edit', [WisataController::class, 'editProfile'])->name('profile.edit');
 Route::post('/profile/update', [WisataController::class, 'updateProfile'])->name('profile.update');
+
+Route::get('/pesanan', [PesananController::class, 'index'])->name('pesanan.list');
+
+// Menampilkan detail pesanan berdasarkan ID
+Route::get('/pesanan/{id}', [PesananController::class, 'show'])->name('pesanan.show');
