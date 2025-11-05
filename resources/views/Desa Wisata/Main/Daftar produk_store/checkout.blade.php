@@ -78,24 +78,24 @@
                             @error('telepon')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
-                        </div>
+                        </div> 
 
                         <div class="d-flex justify-content-between align-items-center">
                             <a href="{{ route('produk.showProduk', 'store') }}" class="btn btn-secondary">
                                 <i class="bi bi-arrow-left"></i> Kembali
                             </a>
-                            <button type="submit" class="btn btn-primary">
+                             <button type="submit" class="btn btn-primary">
                                 <i class="bi bi-bag-check"></i> Proses Pesanan
                             </button>
                         </div>
                     </form>
 
-                    <div class="mt-4">
+                    <!-- <div class="mt-4">
                         <a href="{{ route('produk.checkout', $produk->id) }}" class="btn btn-primary">Checkout</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
 </div>
-@endsection
+@endsection 
