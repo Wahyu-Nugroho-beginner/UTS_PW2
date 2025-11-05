@@ -90,7 +90,7 @@
                 <div class="img-frame mx-auto" style="max-width:420px">
                     <img src="{{ asset('images/kebun_strawberry.png') }}" alt="Danau Kerinci" onerror="this.src='https://via.placeholder.com/600x400?text=Danau+Kerinci'">
                 </div>
-                <p class="mt-3">Lokasi: Kebun Baru, Kecamatan Kayu Aro Barat, Kabupaten Kerinci, Jambi</p>
+                <a href="https://maps.app.goo.gl/ToX6Ray52JMawAP78"class="mt-3">Lokasi: Kebun Baru, Kecamatan Kayu Aro Barat, Kabupaten Kerinci, Jambi</a>
             </div>
         </div>
 

@@ -92,7 +92,7 @@
                 <div class="img-frame mx-auto" style="max-width:420px">
                     <img src="{{ asset('images/danau_kerinci.png') }}" alt="Danau Kerinci" onerror="this.src='https://via.placeholder.com/600x400?text=Danau+Kerinci'">
                 </div>
-                <p class="mt-3">Lokasi: Kabupaten Kerinci, Jambi</p>
+                <a href="https://maps.app.goo.gl/Dv7zSJ2xHR4bUsJZ6" class="mt-3">Lokasi: Kabupaten Kerinci, Jambi</a>
             </div>
         </div>
 

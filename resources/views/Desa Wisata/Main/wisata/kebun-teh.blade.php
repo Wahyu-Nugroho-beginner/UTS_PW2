@@ -90,7 +90,7 @@
                 <div class="img-frame mx-auto" style="max-width:420px">
                     <img src="{{ asset('images/kebun_teh.png') }}" alt="Kebun Teh" onerror="this.src='https://via.placeholder.com/600x400?text=Kebun+Teh'">
                 </div>
-                <p class="mt-3">Lokasi: Kecamatan Kayu Aro Barat, Kabupaten Kerinci, Jambi</p>
+                <a href="https://maps.app.goo.gl/NqXikirCv2Qbe8HY8"class="mt-3">Lokasi: Kecamatan Kayu Aro Barat, Kabupaten Kerinci, Jambi</a>
             </div>
         </div>
 
