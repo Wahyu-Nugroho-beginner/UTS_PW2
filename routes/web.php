@@ -27,7 +27,13 @@ Route::get('/register', [WisataController::class, 'create'])->name('register.cre
 Route::post('/register', [WisataController::class, 'store'])->name('register.store');
 Route::get('/fasilitas/{slug}', [WisataController::class, 'showFasilitas'])->name('fasilitas.show');
 Route::get('/produk/store', [WisataController::class, 'showProduk'])->name('produk.showProduk');
-Route::get('/produk/checkout', [CheckoutController::class, 'index'])->name('produk.checkout');
+
+// Form checkout produk (GET)
+Route::get('/produk/checkout/{id}', [CheckoutController::class, 'index'])->name('produk.checkout');
+
+// Proses checkout (POST)
+Route::post('/produk/checkout', [CheckoutController::class, 'process'])->name('produk.checkout.process');
+
 Route::get('/pesanan', [CheckoutController::class, 'showPesanan'])->name('pesanan.show');
 Route::post('/checkout/process', [CheckoutController::class, 'process'])->name('checkout.process');
 Route::get('/pesanan', [CheckoutController::class, 'showPesanan'])->name('pesanan.show');
