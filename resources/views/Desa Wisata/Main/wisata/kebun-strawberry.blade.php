@@ -77,13 +77,13 @@
             <div class="col-lg-7">
                 <h2 class="section-title">KEBUN STRAWBERRY</h2>
                 <p class="text-justify mt-3">
-                    Terletak di wilayah Kabupaten Kerinci, Provinsi Jambi, tidak jauh dari kawasan Kayu Aro, terdapat sebuah destinasi alam yang menakjubkan Danau Kerinci. Danau ini merupakan danau alami terbesar di Provinsi Jambi, dengan luas mencapai sekitar 4.200 hektar, berada di ketinggian ±783 meter di atas permukaan laut.
+                    Selain terkenal dengan hamparan kebun teh dan keindahan Gunung Kerinci, Kayu Aro juga memiliki daya tarik wisata yang tak kalah menarik Kebun Stroberi Kayu Aro. Terletak di dataran tinggi yang sejuk dengan udara bersih dan pemandangan pegunungan yang menawan, kebun stroberi ini menjadi destinasi favorit wisata keluarga dan anak muda yang berkunjung ke Kabupaten Kerinci, Jambi.
                 </p>
                 <p class="text-justify">
-                    Dikelilingi oleh perbukitan hijau dan udara yang sejuk, Danau Kerinci menawarkan pemandangan alam yang menenangkan dan memesona. Permukaan airnya yang biru jernih memantulkan bayangan langit dan pegunungan di sekitarnya, menciptakan suasana damai yang sangat cocok untuk bersantai, berfoto, atau menikmati matahari terbenam di tepian danau.
+                    Di sini, pengunjung dapat memetik stroberi langsung dari kebunnya, sambil menikmati suasana pedesaan yang asri. Stroberi yang ditanam memiliki cita rasa manis segar, hasil dari tanah subur dan suhu sejuk Kayu Aro yang ideal untuk pertanian hortikultura.
                 </p>
                 <p class="text-justify">
-                    Selain keindahan alamnya, kawasan Danau Kerinci juga menjadi pusat berbagai aktivitas wisata dan budaya. Setiap tahun diadakan Festival Danau Kerinci, yang menampilkan beragam kesenian tradisional, lomba perahu, hingga pameran hasil bumi dan kerajinan masyarakat lokal.
+                    Selain aktivitas petik buah, wisatawan juga dapat menikmati minuman dan olahan stroberi lokal seperti jus, selai, dan dodol stroberi buatan masyarakat sekitar. Area kebun yang tertata rapi dan berlatar pemandangan Gunung Kerinci menjadikannya tempat yang sangat fotogenik cocok untuk bersantai maupun berburu foto alam.
                 </p>
             </div>
             <div class="col-lg-5 text-center mt-4 mt-lg-0">
