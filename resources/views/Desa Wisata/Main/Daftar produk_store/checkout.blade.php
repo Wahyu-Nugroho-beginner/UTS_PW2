@@ -40,7 +40,7 @@
                     @endif
 
                     <!-- Checkout Form -->
-                    <form action="{{ route('checkout.process') }}" method="POST">
+                    <form action="{{ route('produk.checkout.process') }}" method="POST">
                         @csrf
                         <input type="hidden" name="produk_id" value="{{ $produk->id ?? '' }}">
                         
@@ -89,6 +89,10 @@
                             </button>
                         </div>
                     </form>
+
+                    <div class="mt-4">
+                        <a href="{{ route('produk.checkout', $produk->id) }}" class="btn btn-primary">Checkout</a>
+                    </div>
                 </div>
             </div>
         </div>

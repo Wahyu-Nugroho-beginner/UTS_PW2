@@ -1,4 +1,3 @@
-
 @extends('desa wisata.layout.master')
 
 @section('title', 'Halaman Home')
@@ -106,7 +105,7 @@
                             <div class="text-muted">| {{ $produk->jumlah_produk }} (Stok)</div>
                         </div>
                         <div class="mt-3">
-                            <a href="{{ route('produk.checkout', ['produk_id' => $produk->id]) }}" class="btn btn-primary w-100">
+                            <a href="{{ route('produk.checkout', $produk->id) }}" class="btn btn-primary w-100">
                                 <i class="bi bi-cart-plus"></i> Beli Sekarang
                             </a>
                         </div>
