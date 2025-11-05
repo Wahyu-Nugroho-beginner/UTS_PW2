@@ -76,13 +76,13 @@
             <div class="col-lg-7">
                 <h2 class="section-title">GUNUNG KERINCI</h2>
                 <p class="text-justify mt-3">
-                    Terletak di wilayah Kabupaten Kerinci, Provinsi Jambi, tidak jauh dari kawasan Kayu Aro, terdapat sebuah destinasi alam yang menakjubkan Danau Kerinci. Danau ini merupakan danau alami terbesar di Provinsi Jambi, dengan luas mencapai sekitar 4.200 hektar, berada di ketinggian ±783 meter di atas permukaan laut.
+                    Berlokasi di kawasan Kayu Aro, Kabupaten Kerinci, Provinsi Jambi, Gunung Kerinci berdiri megah sebagai gunung berapi tertinggi di Indonesia dan gunung tertinggi di Pulau Sumatera, dengan ketinggian mencapai 3.805 meter di atas permukaan laut. Gunung ini merupakan ikon kebanggaan masyarakat Kerinci sekaligus daya tarik utama wisata alam di kawasan Taman Nasional Kerinci Seblat (TNKS), yang telah diakui sebagai Warisan Dunia UNESCO.
                 </p>
                 <p class="text-justify">
-                    Dikelilingi oleh perbukitan hijau dan udara yang sejuk, Danau Kerinci menawarkan pemandangan alam yang menenangkan dan memesona. Permukaan airnya yang biru jernih memantulkan bayangan langit dan pegunungan di sekitarnya, menciptakan suasana damai yang sangat cocok untuk bersantai, berfoto, atau menikmati matahari terbenam di tepian danau.
+                    Gunung Kerinci menawarkan pengalaman wisata yang luar biasa bagi para pencinta alam dan pendaki. Jalur pendakiannya dimulai dari Desa Kersik Tuo, Kecamatan Kayu Aro, yang menjadi gerbang utama pendakian. Dari sini, pendaki akan melewati hutan tropis yang lebat, sumber air alami, serta berbagai flora dan fauna endemik seperti burung rangkong, siamang, dan harimau sumatera.
                 </p>
                 <p class="text-justify">
-                    Selain keindahan alamnya, kawasan Danau Kerinci juga menjadi pusat berbagai aktivitas wisata dan budaya. Setiap tahun diadakan Festival Danau Kerinci, yang menampilkan beragam kesenian tradisional, lomba perahu, hingga pameran hasil bumi dan kerajinan masyarakat lokal.
+                    Selain pendakian, kawasan Gunung Kerinci juga menyuguhkan pemandangan spektakuler. Dari puncaknya, pendaki dapat menyaksikan pemandangan Danau Kerinci, hamparan kebun teh Kayu Aro, dan garis pantai barat Sumatera di kejauhan. Udara sejuk, aroma hutan yang segar, dan suasana damai menjadikan kawasan ini destinasi sempurna untuk wisata petualangan dan ekowisata.
                 </p>
             </div>
             <div class="col-lg-5 text-center mt-4 mt-lg-0">

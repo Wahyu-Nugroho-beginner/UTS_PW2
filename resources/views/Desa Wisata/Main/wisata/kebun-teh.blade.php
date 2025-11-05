@@ -77,13 +77,16 @@
             <div class="col-lg-7">
                 <h2 class="section-title">KEBUN TEH</h2>
                 <p class="text-justify mt-3">
-                    Terletak di wilayah Kabupaten Kerinci, Provinsi Jambi, tidak jauh dari kawasan Kayu Aro, terdapat sebuah destinasi alam yang menakjubkan Danau Kerinci. Danau ini merupakan danau alami terbesar di Provinsi Jambi, dengan luas mencapai sekitar 4.200 hektar, berada di ketinggian ±783 meter di atas permukaan laut.
+                    Kebun Teh Kayu Aro adalah salah satu kebun teh tertua dan tertinggi di dunia, terletak di Kecamatan Kayu Aro, Kabupaten Kerinci, Provinsi Jambi. Berada di ketinggian sekitar 1.400–1.600 meter di atas permukaan laut, hamparan kebun teh ini menawarkan pemandangan hijau yang memanjakan mata dengan latar megah Gunung Kerinci, gunung berapi tertinggi di Indonesia.
                 </p>
                 <p class="text-justify">
-                    Dikelilingi oleh perbukitan hijau dan udara yang sejuk, Danau Kerinci menawarkan pemandangan alam yang menenangkan dan memesona. Permukaan airnya yang biru jernih memantulkan bayangan langit dan pegunungan di sekitarnya, menciptakan suasana damai yang sangat cocok untuk bersantai, berfoto, atau menikmati matahari terbenam di tepian danau.
+                    Dibuka sejak masa kolonial Belanda pada awal abad ke-20, kebun ini dikelola oleh perusahaan Belanda NV. HVA (Handelsvereeniging Amsterdam) dan kini menjadi bagian dari PT Perkebunan Nusantara VI (PTPN VI). Hingga saat ini, teh Kayu Aro tetap dikenal sebagai teh hitam premium dengan cita rasa khas dan aroma segar yang diekspor ke berbagai negara, termasuk Inggris dan Belanda.
                 </p>
                 <p class="text-justify">
-                    Selain keindahan alamnya, kawasan Danau Kerinci juga menjadi pusat berbagai aktivitas wisata dan budaya. Setiap tahun diadakan Festival Danau Kerinci, yang menampilkan beragam kesenian tradisional, lomba perahu, hingga pameran hasil bumi dan kerajinan masyarakat lokal.
+                    Selain menyuguhkan panorama alam yang indah, Kebun Teh Kayu Aro juga menjadi destinasi wisata edukatif dan fotografi. Pengunjung dapat berjalan di antara barisan tanaman teh yang rapi, menikmati udara segar pegunungan, hingga mengunjungi pabrik pengolahan teh tua peninggalan Belanda yang masih beroperasi hingga kini.
+                </p>
+                <p class="text-justify">
+                    Kebun teh ini juga menjadi titik favorit untuk melihat sunrise di kaki Gunung Kerinci, menjadikannya tempat ideal bagi wisatawan yang mencari ketenangan dan keindahan alam yang autentik.
                 </p>
             </div>
             <div class="col-lg-5 text-center mt-4 mt-lg-0">

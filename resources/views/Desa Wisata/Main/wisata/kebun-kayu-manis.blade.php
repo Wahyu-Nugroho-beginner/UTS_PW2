@@ -74,15 +74,15 @@
     <main class="container hero my-5">
         <div class="row align-items-center">
             <div class="col-lg-7">
-                <h2 class="section-title">KAYU MANIS</h2>
+                <h2 class="section-title">KEBUN KAYU MANIS</h2>
                 <p class="text-justify mt-3">
-                    Terletak di wilayah Kabupaten Kerinci, Provinsi Jambi, tidak jauh dari kawasan Kayu Aro, terdapat sebuah destinasi alam yang menakjubkan Danau Kerinci. Danau ini merupakan danau alami terbesar di Provinsi Jambi, dengan luas mencapai sekitar 4.200 hektar, berada di ketinggian ±783 meter di atas permukaan laut.
+                    Selain terkenal dengan teh dan kopi, Kayu Aro juga memiliki potensi alam yang tak kalah menarik, yaitu kebun kayu manis (kulit manis atau cinnamon). Tanaman ini tumbuh subur di dataran tinggi Kayu Aro yang berhawa sejuk dan memiliki tanah vulkanik yang kaya unsur hara. Kayu manis Kerinci bahkan telah dikenal secara internasional sebagai salah satu kayu manis terbaik di dunia, dengan aroma kuat dan cita rasa manis yang khas.
                 </p>
                 <p class="text-justify">
-                    Dikelilingi oleh perbukitan hijau dan udara yang sejuk, Danau Kerinci menawarkan pemandangan alam yang menenangkan dan memesona. Permukaan airnya yang biru jernih memantulkan bayangan langit dan pegunungan di sekitarnya, menciptakan suasana damai yang sangat cocok untuk bersantai, berfoto, atau menikmati matahari terbenam di tepian danau.
+                    Kebun kayu manis di Kayu Aro tidak hanya menjadi sumber ekonomi utama bagi sebagian masyarakat, tetapi juga berkembang menjadi objek wisata edukatif dan agrowisata. Wisatawan dapat melihat langsung proses penanaman hingga pengupasan kulit kayu manis, yang dilakukan dengan cara tradisional oleh petani setempat.
                 </p>
                 <p class="text-justify">
-                    Selain keindahan alamnya, kawasan Danau Kerinci juga menjadi pusat berbagai aktivitas wisata dan budaya. Setiap tahun diadakan Festival Danau Kerinci, yang menampilkan beragam kesenian tradisional, lomba perahu, hingga pameran hasil bumi dan kerajinan masyarakat lokal.
+                    Dari perkebunan yang luas ini, pengunjung juga dapat menikmati pemandangan indah pegunungan Bukit Barisan dan hamparan kebun kopi yang berdampingan, menciptakan suasana tenang dan alami khas pedesaan Kerinci.
                 </p>
             </div>
             <div class="col-lg-5 text-center mt-4 mt-lg-0">
