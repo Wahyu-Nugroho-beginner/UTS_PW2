@@ -58,6 +58,9 @@
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li><a class="dropdown-item" href="{{ route('profile.show') }}">Profile</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('pesanan.show') }}">
+                                        <i class="bi bi-bag"></i> Pesanan Saya
+                                    </a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li>
                                         <form action="{{ route('logout') }}" method="POST" class="dropdown-item p-0">
@@ -99,8 +102,13 @@
                         <div class="product-name">{{ $produk->nama_produk }}</div>
                         <div class="product-price">Rp {{ number_format($produk->harga, 0, ',', '.') }}</div>
                         <div class="product-meta mt-2">
-                            <div class="star">★</div>
-                            <div class="text-muted">| {{ $produk->jumlah_produk }} (Stock)</div>
+                            <div class="star">★★★★★</div>
+                            <div class="text-muted">| {{ $produk->jumlah_produk }} (Stok)</div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="{{ route('produk.checkout', ['produk_id' => $produk->id]) }}" class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus"></i> Beli Sekarang
+                            </a>
                         </div>
                     </div>
                 </div>

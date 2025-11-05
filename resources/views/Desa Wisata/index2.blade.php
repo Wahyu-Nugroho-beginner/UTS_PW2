@@ -74,7 +74,7 @@
         </div>
                                 @if(session('user_id'))
                             <div class="btn-group">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="btn btn-primary dropdown-toggl" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="bi bi-person-circle"></i> {{ session('username') }}
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end">
