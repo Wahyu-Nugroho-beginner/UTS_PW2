@@ -16,6 +16,7 @@ Route::get('/index2', function () {
     return view('Desa Wisata.index2');
 })->name('home.index2');
 
+
 // Wisata pages
 Route::get('/wisata/{slug}', [WisataController::class, 'show'])->name('wisata.show');
 
@@ -29,16 +30,12 @@ Route::post('/register', [WisataController::class, 'store'])->name('register.sto
 Route::get('/fasilitas/{slug}', [WisataController::class, 'showFasilitas'])->name('fasilitas.show');
 Route::get('/produk/store', [WisataController::class, 'showProduk'])->name('produk.showProduk');
 
-// Form checkout produk (GET)
+// Checkout Routes
 Route::get('/produk/checkout/{id}', [CheckoutController::class, 'index'])->name('produk.checkout');
+Route::post('/produk/checkout/process', [CheckoutController::class, 'process'])->name('produk.checkout.process');
 
-// Proses checkout (POST)
-Route::post('/produk/checkout', [CheckoutController::class, 'process'])->name('produk.checkout.process');
-
+// Pesanan Routes
 Route::get('/pesanan', [CheckoutController::class, 'showPesanan'])->name('pesanan.show');
-Route::post('/checkout/process', [CheckoutController::class, 'process'])->name('checkout.process');
-Route::get('/pesanan', [CheckoutController::class, 'showPesanan'])->name('pesanan.show');
-
 
 // Authentication Routes
 Route::get('/login', [WisataController::class, 'showLoginForm'])->name('login');

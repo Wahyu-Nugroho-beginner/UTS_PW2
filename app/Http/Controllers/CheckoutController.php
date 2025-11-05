@@ -17,11 +17,12 @@ class CheckoutController extends Controller
         return view('Desa Wisata.Main.Daftar produk_store.checkout', compact('produk'));
     }
 
-    // Proses pesanan
+        // Proses pesanan
     public function process(Request $request)
     {
         $request->validate([
             'produk_id' => 'required|exists:produks,id',
+            'jumlah' => 'required|integer|min:1',
             'nama'      => 'required|string|max:100',
             'email'     => 'required|email|max:100',
             'alamat'    => 'required|string|max:255',
@@ -33,18 +34,46 @@ class CheckoutController extends Controller
             return back()->with('error', 'Produk tidak ditemukan.');
         }
 
-        // Simpan ke tabel pesanan
-        DB::table('pesanans')->insert([
-            'id_user'        => session('user_id') ?? null, // jika user login
-            'id_produk'      => $produk->id,
-            'jumlah_pesanan' => 1, // bisa diubah jika ada input jumlah
-            'total_harga'    => $produk->harga,
-            'nama_produk'    => $produk->nama_produk,
-            'tanggal_pesanan'=> now(),
-            'created_at'     => now(),
-            'updated_at'     => now(),
-        ]);
+        // Validasi stok
+        if ($request->jumlah > $produk->jumlah_produk) {
+            return back()->with('error', 'Jumlah pesanan melebihi stok yang tersedia.');
+        }
 
-        return redirect()->route('produk.showProduk', 'store')->with('success', 'Pesanan berhasil diproses!');
-    }
+        DB::beginTransaction();
+        try {
+            // Simpan ke tabel pesanan
+            DB::table('pesanans')->insert([
+                'id_user'        => session('user_id') ?? null,
+                'id_produk'      => $produk->id,
+                'jumlah_pesanan' => $request->jumlah,
+                'total_harga'    => $produk->harga * $request->jumlah,
+                'nama_produk'    => $produk->nama_produk,
+                'tanggal_pesanan'=> now(),
+                'created_at'     => now(),
+                'updated_at'     => now(),
+            ]);
+
+            // Update stok produk
+            DB::table('produks')
+                ->where('id', $produk->id)
+                ->decrement('jumlah_produk', $request->jumlah);
+
+            DB::commit();
+            // Redirect to pesanan list. older code used 'pesanan.show' but that route may require an {id}
+            return redirect()->route('pesanan.list')->with('success', 'Pesanan berhasil diproses!');
+        } catch (\Exception $e) {
+            DB::rollback();
+            // Log the exception for debugging
+            try {
+                \Log::error('Checkout process error: ' . $e->getMessage() . ' in ' . $e->getFile() . ':' . $e->getLine());
+            } catch (\Throwable $logEx) {
+                // ignore logging errors
+            }
+            // If app debug is enabled, include the exception message to help diagnose; otherwise show generic message
+            if (config('app.debug')) {
+                return back()->with('error', 'Terjadi kesalahan saat memproses pesanan: ' . $e->getMessage());
+            }
+            return back()->with('error', 'Terjadi kesalahan saat memproses pesanan. Silakan coba lagi atau periksa log.');
+        }
+}
 }

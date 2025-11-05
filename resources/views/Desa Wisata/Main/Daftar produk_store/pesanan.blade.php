@@ -31,6 +31,11 @@
                     @endforeach
                 </tbody>
             </table>
+            <div>
+                <a href="{{ route('produk.showProduk', 'store') }}" class="btn btn-primary me-2">
+                            <i class="bi bi-arrow-left"></i> Kembali ke Toko
+                        </a>
+            </div>
         </div>
     @endif
 </div>

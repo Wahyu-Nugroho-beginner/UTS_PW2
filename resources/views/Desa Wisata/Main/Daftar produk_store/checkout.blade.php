@@ -23,26 +23,64 @@
                         </div>
                     @endif
 
-                    <!-- Product Details -->
-                    @if(isset($produk))
-                    <div class="row mb-4">
-                        <div class="col-md-4">
-                            <img src="{{ asset($produk->gambar ? 'images/'.$produk->gambar : 'images/product_placeholder.png') }}" 
-                                 class="img-fluid rounded" 
-                                 alt="{{ $produk->nama_produk }}">
-                        </div>
-                        <div class="col-md-8">
-                            <h5>{{ $produk->nama_produk }}</h5>
-                            <p class="text-muted mb-2">Stok: {{ $produk->jumlah_produk }}</p>
-                            <h4 class="text-primary mb-3">Rp {{ number_format($produk->harga, 0, ',', '.') }}</h4>
-                        </div>
-                    </div>
-                    @endif
-
                     <!-- Checkout Form -->
                     <form action="{{ route('produk.checkout.process') }}" method="POST">
                         @csrf
                         <input type="hidden" name="produk_id" value="{{ $produk->id ?? '' }}">
+
+                        <!-- Product Details -->
+                        @if(isset($produk))
+                        <div class="row mb-4">
+                            <div class="col-md-4">
+                                <img src="{{ asset($produk->gambar ? 'images/'.$produk->gambar : 'images/product_placeholder.png') }}" 
+                                     class="img-fluid rounded" 
+                                     alt="{{ $produk->nama_produk }}">
+                            </div>
+                            <div class="col-md-8">
+                                <h5>{{ $produk->nama_produk }}</h5>
+                                <p class="text-muted mb-2">Stok: {{ $produk->jumlah_produk }}</p>
+                                <div class="mb-3">
+                                    <label for="jumlah" class="form-label">Jumlah Pesanan:</label>
+                                    <div class="input-group" style="width: 150px;">
+                                        <button type="button" class="btn btn-outline-secondary" onclick="updateQuantity(-1)">-</button>
+                                        <input type="number" class="form-control text-center" id="jumlah" name="jumlah" value="1" min="1" max="{{ $produk->jumlah_produk }}">
+                                        <button type="button" class="btn btn-outline-secondary" onclick="updateQuantity(1)">+</button>
+                                    </div>
+                                    @error('jumlah')
+                                        <div class="invalid-feedback d-block">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                                <h4 class="text-primary mb-3">
+                                    Rp <span id="hargaSatuan" data-harga="{{ $produk->harga }}">{{ number_format($produk->harga, 0, ',', '.') }}</span>
+                                    <small class="text-muted">/item</small>
+                                </h4>
+                                <h4 class="text-primary">
+                                    Total: Rp <span id="totalHarga">{{ number_format($produk->harga, 0, ',', '.') }}</span>
+                                </h4>
+                            </div>
+                        </div>
+                        @endif
+
+                        <script>
+                        function updateQuantity(change) {
+                            const input = document.getElementById('jumlah');
+                            const currentVal = parseInt(input.value);
+                            const maxStock = parseInt(input.max);
+                            const newVal = currentVal + change;
+                            
+                            if (newVal >= 1 && newVal <= maxStock) {
+                                input.value = newVal;
+                                updateTotal();
+                            }
+                        }
+
+                        function updateTotal() {
+                            const quantity = parseInt(document.getElementById('jumlah').value);
+                            const hargaSatuan = parseInt(document.getElementById('hargaSatuan').dataset.harga);
+                            const total = quantity * hargaSatuan;
+                            document.getElementById('totalHarga').textContent = new Intl.NumberFormat('id-ID').format(total);
+                        }
+                        </script>
                         
                         <div class="mb-3">
                             <label for="nama" class="form-label">Nama Lengkap</label>
