@@ -46,6 +46,10 @@
                     </div>
 
                     <div class="d-flex justify-content-end">
+                        <a href="{{ route('home.index2') }}" class="btn btn-primary me-2">
+                            <i class="ke-home"></i>Kembali 
+                        </a>
+
                         <a href="{{ route('profile.edit') }}" class="btn btn-primary me-2">
                             <i class="bi bi-pencil-square"></i> Edit Profil
                         </a>
