@@ -14,6 +14,18 @@ class CheckoutController extends Controller
         return view('desa wisata.main.daftar produk_store.checkout', compact('produks'));
     }
 
+    public function showPesanan()
+    {
+        $pesanans = DB::table('pesanans')
+            ->join('produks', 'pesanans.produk_id', '=', 'produks.id')
+            ->where('pesanans.user_id', session('user_id'))
+            ->select('pesanans.*', 'produks.nama_produk')
+            ->orderBy('pesanans.created_at', 'desc')
+            ->get();
+
+        return view('desa wisata.main.daftar produk_store.pesanan', compact('pesanans'));
+    }
+
     public function process(Request $request)
     {
         // Validasi input

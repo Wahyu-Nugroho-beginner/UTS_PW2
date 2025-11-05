@@ -36,7 +36,10 @@
 
 
     .ke-home {
-        color: white;
+        background-color:#bfeff3 ;
+        color: rgb(0, 0, 0);
+        border-color: black;
+        border: 4px;
         border-radius: 4px;
         padding: 6px 0px;
         text-decoration: none;
@@ -46,6 +49,7 @@
         align-items: center;
         gap: 8px;
     }
+    
 
 	/* Kerinci page specific overrides (uses body.kerinci-page) */
 	.kerinci-page .brand-row { display:flex; align-items:center; gap:12px; }

@@ -28,6 +28,9 @@ Route::post('/register', [WisataController::class, 'store'])->name('register.sto
 Route::get('/fasilitas/{slug}', [WisataController::class, 'showFasilitas'])->name('fasilitas.show');
 Route::get('/produk/store', [WisataController::class, 'showProduk'])->name('produk.showProduk');
 Route::get('/produk/checkout', [CheckoutController::class, 'index'])->name('produk.checkout');
+Route::get('/pesanan', [CheckoutController::class, 'showPesanan'])->name('pesanan.show');
+Route::post('/checkout/process', [CheckoutController::class, 'process'])->name('checkout.process');
+Route::get('/pesanan', [CheckoutController::class, 'showPesanan'])->name('pesanan.show');
 
 
 // Authentication Routes

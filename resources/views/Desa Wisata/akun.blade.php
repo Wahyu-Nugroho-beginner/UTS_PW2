@@ -66,7 +66,7 @@
     </div>
 </div>
 
-<style>
+<!-- <style>
 .card {
     border: none;
     border-radius: 15px;
@@ -94,5 +94,5 @@
 .alert {
     border-radius: 8px;
 }
-</style>
+</style> -->
 @endsection
