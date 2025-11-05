@@ -89,7 +89,7 @@
                 <div class="img-frame mx-auto" style="max-width:420px">
                     <img src="{{ asset('images/gunung_kerinci.png') }}" alt="Danau Kerinci" onerror="this.src='https://via.placeholder.com/600x400?text=Danau+Kerinci'">
                 </div>
-                <p class="mt-3">Lokasi: Lubuk Gadang Sel., Kec. Sangir, Kabupaten Solok Selatan, Sumatera Barat</p>
+                <a href="https://maps.app.goo.gl/TeNJLpPpKHi286GCA"class="mt-3">Lokasi: Lubuk Gadang Sel., Kec. Sangir, Kabupaten Solok Selatan, Sumatera Barat</a>
             </div>
         </div>
 
