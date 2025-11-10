@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\DB;
 
 class CheckoutController extends Controller
 {
-    // Tampilkan form checkout dengan detail produk
     public function index($id)
     {
         $produk = DB::table('produks')->where('id', $id)->first();
@@ -41,7 +40,6 @@ class CheckoutController extends Controller
 
         DB::beginTransaction();
         try {
-            // Simpan ke tabel pesanan
             DB::table('pesanans')->insert([
                 'id_user'        => session('user_id') ?? null,
                 'id_produk'      => $produk->id,
@@ -53,23 +51,18 @@ class CheckoutController extends Controller
                 'updated_at'     => now(),
             ]);
 
-            // Update stok produk
             DB::table('produks')
                 ->where('id', $produk->id)
                 ->decrement('jumlah_produk', $request->jumlah);
 
             DB::commit();
-            // Redirect to pesanan list. older code used 'pesanan.show' but that route may require an {id}
             return redirect()->route('pesanan.list')->with('success', 'Pesanan berhasil diproses!');
         } catch (\Exception $e) {
             DB::rollback();
-            // Log the exception for debugging
             try {
                 \Log::error('Checkout process error: ' . $e->getMessage() . ' in ' . $e->getFile() . ':' . $e->getLine());
             } catch (\Throwable $logEx) {
-                // ignore logging errors
             }
-            // If app debug is enabled, include the exception message to help diagnose; otherwise show generic message
             if (config('app.debug')) {
                 return back()->with('error', 'Terjadi kesalahan saat memproses pesanan: ' . $e->getMessage());
             }
