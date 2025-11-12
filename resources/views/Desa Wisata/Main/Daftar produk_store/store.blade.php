@@ -1,6 +1,6 @@
 @extends('desa wisata.layout.master')
 
-@section('title', 'Halaman Home')
+@section('title', 'Store')
 
 @section('content')
 <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
@@ -99,5 +99,3 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 @endsection
-</body>
-</html>

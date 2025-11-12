@@ -1,6 +1,6 @@
 @extends('desa wisata.layout.master')
 
-@section('title', 'ATV')
+@section('title', 'Makan Gratis')
 
 @section('content')
 
