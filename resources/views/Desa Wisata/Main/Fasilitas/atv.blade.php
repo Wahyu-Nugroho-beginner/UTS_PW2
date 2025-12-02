@@ -1,4 +1,4 @@
-@extends('desa wisata.layout.master')
+@extends('Desa Wisata.Layout.master')
 
 @section('title', 'ATV')
 
@@ -114,11 +114,11 @@
                 <div class="feature-title">BENSIN GRATIS</div>
             </div>
             <div class="feature-box alt z-1">
-                <img src="{{ asset('images/obeng.png') }}" alt="Obeng" width="100 px">
+                <img src="{{ asset('images/Obeng.png')}}" alt="Obeng" width="100 px">
                 <div class="feature-title">24 JAM REPARASI</div>
             </div>
             <div class="feature-box z-1">
-                <img src="{{ asset('images/jam.png') }}" alt="Jam" width="75 px">
+                <img src="{{ asset('images/Jam.png')}}" alt="Jam" width="75 px">
                 <div class="feature-title">TANPA BATAS WAKTU</div>
             </div>
         </div>

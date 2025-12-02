@@ -1,4 +1,4 @@
-@extends('desa wisata.layout.master')
+@extends('Desa Wisata.Layout.master')
 
 @section('title', 'Homestay')
 
@@ -118,7 +118,7 @@
                 <div class="feature-title">Jemputan <br>Bandara</div>
             </div>
             <div class="feature-box z-1">
-                <img src="{{ asset('images/vector.png') }}" alt="Restoran" width="50 px">
+                <img src="{{ asset('images/Vector.png')}}" alt="Restoran" width="50 px">
                 <div class="feature-title">Restoran</div>
             </div>
         </div>

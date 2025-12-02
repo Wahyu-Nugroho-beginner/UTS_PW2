@@ -4,10 +4,10 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\PesananController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('Desa Wisata.index'); 
-});
-
+// Route::get('/', function () {
+//     return view('Desa Wisata.index'); 
+// });
+route::get('/', [WisataController::class, 'index']);
 Route::get('/index2', function () {
     if (!session('user_id')) {
         return redirect()->route('login')->with('error', 'Silakan login terlebih dahulu');

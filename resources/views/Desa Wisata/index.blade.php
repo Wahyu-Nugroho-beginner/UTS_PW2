@@ -1,4 +1,4 @@
-@extends('desa wisata.layout.master')
+@extends('Desa Wisata.Layout.master')
 
 @section('title', 'Home')
 
