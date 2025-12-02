@@ -14,11 +14,11 @@
 </head>
 
 <body>
-    @include('desa wisata.layout.header')
+    @include('Desa Wisata.Layout.header')
     <div class="container">
         @yield('content')
     </div>
-    @include('desa wisata.layout.footer')
+    @include('Desa Wisata.Layout.footer')
 </body>
 
 </html>

@@ -13,7 +13,7 @@ class WisataController extends Controller
      */
     public function index()
     {
-        //
+        return view('Desa Wisata.index');
     }
 
     /**
@@ -87,13 +87,13 @@ class WisataController extends Controller
     public function showProduk($param = null)
     {
         $produks = DB::table('produks')->get();
-        return view('desa wisata.main.daftar produk_store.store', ['produks' => $produks]);
+        return view('Desa Wisata.Main.Daftar produk_store.store', ['produks' => $produks]);
     }
 
     public function checkout()
     {
         $produks = DB::table('produks')->get();
-        return view('desa wisata.main.daftar produk_store.checkout', ['produks' => $produks]);
+        return view('Desa Wisata.Main.Daftar produk_store.checkout', ['produks' => $produks]);
     }
 
     /**
